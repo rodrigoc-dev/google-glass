@@ -1,50 +1,48 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-@font-face {
-    font-family: 'FonteLogo';
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face{
+    font-family: 'FonteLogo' ;
     src: url("../_fonts/bubblegum-sans-regular.otf");
 }
-body {
-    font-family: Arial, sans-serif;
+body{
+    font-family: Arial,sans-serif;
     background-color: #dddddd;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 1)     
 }
 
-div#interface {
-    width: 900px;
-    background-color: #ffffff;
-    margin: -20px auto 0px auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
-    padding: 10px;
-}
-
-p {
-    text-align: justify;
+p{ text-align: justify;
     text-indent: 50px;
 }
-
-a {
+a{
     color: #606060;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+a:hover{
+    text-decoration: underline
+}
+div#interface{
+    width: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 10px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    padding: 10px ;
+
 }
 
-header#cabecalho img#icone {
+header#cabecalho img#icone{
     position: absolute;
-    left: 780px;
-    top:70px;
+    left: 960px;
+    top: 40px;
 }
 
-header#cabecalho {
+header#cabecalho{
     border-bottom: 1px #606060 solid;
     height: 150px;
+    left: 970px;
     background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
 }
-
-header#cabecalho h1 {
+header#cabecalho h1{
     font-family: 'FonteLogo', sans-serif;
     font-size: 30pt;
     color: #606060;
@@ -53,7 +51,7 @@ header#cabecalho h1 {
     margin-bottom: 0px;
 }
 
-header#cabecalho h2 {
+header#cabecalho h2{
     font-family: 'Titillium Web', sans-serif;
     color: #888888;
     font-size: 15pt;
@@ -61,11 +59,12 @@ header#cabecalho h2 {
     margin-top: 0px;
 }
 
-/* Formatação de imagens com legendas */
+/* formatação de imagens com legendas */
 
 figure.foto-legenda {
     position: relative;
     border: 8px solid white;
+    width: auto;
     box-shadow: 1px 1px 4px black
 }
 
@@ -78,60 +77,58 @@ figure.foto-legenda figcaption {
     opacity: 0;
     position: absolute;
     top: 0px;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba( 0,0,0,.4);
     color: white;
     width: 100%;
     height: 100%;
     padding: 10px;
-    box-sizing: border-box;
-    transition: opacity .1s;
+    box-sizing: border-box; 
+    transition: opacity 1s ;
 }
 
-figure.foto-legenda:hover figcaption {
+figure.foto-legenda:hover figcaption{
     opacity: 1;
 }
 
-/* Formatação do Menu */
+/* Formatação do menu */
 
-nav#menu {
-    display: block;
-}
-
-nav#menu ul {
-    list-style-type: none;
+nav#menu ul{
+    list-style: none;
     text-transform: uppercase;
-    position: absolute;
+    position:absolute;
     top: -20px;
-    left: 300px;
+    left: 495px;
 }
 
-nav#menu li {
+nav#menu li{
     display: inline-block;
     background-color: #dddddd;
     padding: 10px;
-    margin: 2px;
-    transition: background-color 1s;
+    margin: 2px;          
 }
 
-nav#menu li:hover {
+nav#menu li:hover{
+    transition: 1s;
     background-color: #606060;
 }
 
-nav#menu h1 {
+nav#menu h1{
     display: none;
 }
 
-nav#menu a {
+nav#menu a{
     color: #000000;
     text-decoration: none;
 }
-
-nav#menu a:hover {
+ 
+nav#menu a:hover{
     color: #ffffff;
-    text-decoration: underline;
+    text-decoration: underline;     
 }
 
-section#corpo {
+/* Formatação da pagina*/
+
+section#corpo{
     display: block;
     width: 500px;
     float: left;
@@ -139,7 +136,7 @@ section#corpo {
     padding-right: 15px;
 }
 
-article#noticia-principal h2 {
+article#noticia-principal h2{
     font-size: 13pt;
     color: #606060;
     background-color: #dddddd;
@@ -147,61 +144,62 @@ article#noticia-principal h2 {
     margin: 10px 0px 10px 0px;
 }
 
-header#cabecalho-artigo h1 {
-    font-family: 'FonteLogo' sans-serif;
+header#cabecalho-artigo h1{
+    font-family: 'FonteLogo', sans-serif;
     font-size: 20pt;
     color: #606060;
     margin-bottom: 0px;
+    margin-top: 0px;
 }
 
-.direita {
+.direita{
     text-align: right;
 }
 
-header#cabecalho-artigo h2 {
+header#cabecalho-artigo h2{
     font-size: 13pt;
     color: #cecece;
-    background-color: #ffffff;
+    background: #ffffff;
     margin: 0px;
 }
 
-header#cabecalho-artigo h3 {
+header#cabecalho-artigo h3{
     font-size: 12px;
     color: #606060;
 }
 
-table#tabelaspec {
+table#tabelaspec{
     border: 1px solid #606060;
     border-spacing: 0px;
     margin-left: auto;
     margin-right: auto;
 }
 
-table#tabelaspec td {
+table#tabelaspec td{
     border: 1px solid #606060;
     padding: 10px;
     text-align: center;
     vertical-align: middle;
 }
 
-table#tabelaspec td.ce {
+table#tabelaspec td.ce{
     color: #ffffff;
     background-color: #606060;
     vertical-align: top;
     font-weight: bold;
 }
 
-table#tabelaspec td.cd {
+table#tabelaspec td.cd{
     background-color: #cecece;
 }
 
-table#tabelaspec caption {
+table#tabelaspec caption{
     color: #888888;
     font-size: 13pt;
     font-weight: bolder;
 }
 
-table#tabelaspec caption span {
+table#tabelaspec caption span{
     display: block;
     float: right;
     color: #000000;
@@ -209,7 +207,7 @@ table#tabelaspec caption span {
     margin-top: 10px;
 }
 
-aside#lateral {
+aside#lado{
     display: block;
     width: 350px;
     float: right;
@@ -219,26 +217,26 @@ aside#lateral {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }
 
-aside#lateral h1 {
+aside#lado h1{
     font-family: 'FonteLogo', sans-serif;
     font-size: 20pt;
     color: #606060;
     margin-top: 0px;
+
 }
 
-aside#lateral h2 {
+aside#lado h2{
     background-color: #606060;
     font-size: 13pt;
     color: #ffffff;
     padding: 5px;
 }
 
-footer#rodape {
+footer#rodape{
     clear: both;
-    border-top: 1px solid #606060;
-
+    border-top: 1px solid #606060;  
 }
 
-footer#rodape p {
-    text-align: center;
+footer#rodape p{
+    text-align: center; 
 }
